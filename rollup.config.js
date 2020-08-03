@@ -3,6 +3,7 @@ import commonjs from '@rollup/plugin-commonjs'
 import external from 'rollup-plugin-peer-deps-external'
 import postcss from 'rollup-plugin-postcss'
 import resolve from '@rollup/plugin-node-resolve'
+import typescript from '@rollup/plugin-typescript'
 import url from '@rollup/plugin-url'
 import svgr from '@svgr/rollup'
 import { terser } from 'rollup-plugin-terser'
@@ -10,7 +11,7 @@ import { terser } from 'rollup-plugin-terser'
 import pkg from './package.json'
 
 export default {
-  input: 'src/lib/index.js',
+  input: 'src/lib/index.ts',
   output: [
     {
       file: pkg.main,
@@ -49,6 +50,7 @@ export default {
       exclude: 'node_modules/**',
       runtimeHelpers: true,
     }),
+    typescript(),
     commonjs(),
     terser(),
   ],

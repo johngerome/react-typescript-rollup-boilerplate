@@ -9,6 +9,7 @@ module.exports = {
           'babel-loader',
         ],
       },
+      { test: /\.tsx?$/, loader: "ts-loader" },
       {
         test: /\.(s?)css$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
@@ -22,6 +23,6 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
 };

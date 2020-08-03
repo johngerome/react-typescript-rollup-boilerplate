@@ -2,12 +2,19 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './styles.css'
 
+interface ButtonProps {
+  onClick?: () => void
+  disabled?: boolean
+  className?: string
+  text: string
+}
+
 const Button = ({
   onClick,
   disabled,
   className,
   text,
-}) => (
+}: ButtonProps): JSX.Element => (
   <button
     type="button"
     className={`button ${className}`}
