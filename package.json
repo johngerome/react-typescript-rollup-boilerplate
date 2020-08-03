@@ -6,9 +6,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:johngerome/react-rollup-typescript-boilerplate.git"
+    "url": "git@github.com:johngerome/react-typescript-rollup-boilerplate.git"
   },
-  "homepage": "https://github.com/KaiHotz/react-rollup-boilerplate",
+  "homepage": "https://github.com/johngerome/react-typescript-rollup-boilerplate",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -53,6 +53,7 @@
     "@testing-library/react": "^10.0.1",
     "@testing-library/user-event": "^10.0.0",
     "@types/enzyme": "^3.10.5",
+    "@types/react": "^16.9.44",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^25.2.3",
